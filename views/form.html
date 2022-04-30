@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <div>
+        <form action="logout", method="post">
+            <button type="submit">登出</button>
+        </form>
+    </div>
+    <div class="box">
+        <h1>数据表单</h1>
+        <form action="form" method="post">
+            <div class="inbox">
+                <label>手机号码: </label>
+                <input name="phone" class="form-control" type="number" placeholder="手机号">
+            </div>
+            <div class="inbox">
+                <label>性&emsp;&emsp;别:</label>
+                <select name="sex" style="width: 35%;">
+                    <option value="男">男</option>
+                    <option value="女">女</option>
+                </select>
+            </div>
+            <div class="inbox">
+                <label>年&nbsp; 龄&nbsp; 段:</label>
+                <select name="ageGroup" style="width: 35%;">
+                    <option value="儿童">儿童</option>
+                    <option value="少年">少年</option>
+                    <option value="成人" selected>成人</option>
+                    <option value="老年">老年</option>
+                </select>
+            </div>
+            <div class="inbox">
+                <label>年龄范围:</label>
+                <select name="ageRange" style="width: 35%;">
+                    <option value="10-20 岁">10-20 岁</option>
+                    <option value="20-30 岁">20-30 岁</option>
+                    <option value="30-40 岁">30-40 岁</option>
+                    <option value="40-50 岁">40-50 岁</option>
+                    <option value="50-60 岁">50-60 岁</option>
+                    <option value="60-70 岁">60-70 岁</option>
+                </select>
+            </div>
+            <div class="inbox">
+                <label>意&emsp;&emsp;向:</label>
+                <select name="interest" style="width: 35%;">
+                    <option value="有">有</option>
+                    <option value="无">无</option>
+                    <option value="模糊">模糊</option>
+                    <option value="投诉">投诉</option>
+                </select>
+            </div>
+            <div class="inbox">
+                <label>游戏偏好:</label>
+                <select name="preference" style="width: 35%;">
+                    <option value="传奇">传奇</option>
+                    <option value="仙侠">仙侠</option>
+                    <option value="三国">三国</option>
+                </select>
+            </div>
+            <div class="inbox">
+                <label>其他备注:</label>
+                <input name="note" class="form-control" type="text" placeholder="其他备注">
+            </div>
+            <span class="text">{{ text }} </span>
+            <div class="inbox">
+                <div class="butbox">
+                    <button type="submit">提交</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<style>
+    a{text-decoration:none;color:#000;}
+    .box{
+        width: 350px;
+        height: 500px;
+        position: absolute;
+        top: 13%;
+        left: calc(50% - 175px);
+    }
+    .box>h1{
+        text-align: center;
+        margin: 20px 0 60px 0;
+    }
+    label {
+        margin-right: 10px;
+    }
+    .text {
+        color: red;
+        margin-left: 90px;
+    }
+    .inbox{
+        width: 90%;
+        height: 40px;
+        margin-left: 20%;
+        font-size: 20px;
+    }
+    input{
+        height: 22px;
+    }
+    .butbox{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .box>.butbox>button{
+        width: 55px;
+        height: 30px;
+        text-align: center;
+        background-color: white;
+        border: 1px solid gray;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none !important;
+        margin: 0;
+    }
+</style>

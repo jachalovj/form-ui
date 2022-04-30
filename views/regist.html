@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <div class="box">
+        <div class="head-title">
+            <h1>注册</h1>
+        </div>
+
+        <div class="body-form">
+            <form class="form-regist" method="POST">
+                <div class="inbox">
+                    <input name="username" class="form-control" type="text" placeholder="用户名">
+                </div>
+                <div class="inbox">
+                    <input name="password" class="form-control" type="password" required="" placeholder="密码">
+                </div>
+                <div class="inbox">
+                    <input name="key" class="form-control" type="password" required="" placeholder="密钥">
+                </div>
+                <span class="text">{{ text }}</span>
+                <div class="butbox">
+                    <button class="butleft"><a href="/login">去登录</a></button>
+                    <button type="submit">注册</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    a{text-decoration:none;color:#000;}
+    .box{
+        width: 350px;
+        height: 350px;
+        border: 1px solid gray;
+        position: absolute;
+        top: 20%;
+        left: calc(50% - 175px);
+    }
+    .box h1{
+        text-align: center;
+        margin: 20px 0 60px 0;
+    }
+    .text {
+        color: red;
+        margin-left: 90px;
+    }
+    .box .inbox{
+        width: 60%;
+        height: 50px;
+        margin-left: 25%;
+    }
+    .inbox input{
+        width: 80%;
+        height: 30px;
+    }
+    .box .butbox{
+        width: 50%;
+        margin-left: 25%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .box>.butbox>button{
+        width: 55px;
+        height: 30px;
+        text-align: center;
+        background-color: white;
+        border: 1px solid gray;
+    }
+    .butleft{
+        margin-right: 20px;
+    }
+</style>
